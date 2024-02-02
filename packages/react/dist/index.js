@@ -37,7 +37,9 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.tsx
 var src_exports = {};
 __export(src_exports, {
-  Box: () => Box
+  Box: () => Box,
+  Heading: () => Heading,
+  Text: () => Text
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -150,7 +152,60 @@ var Box = styled("div", {
   width: "100%",
   maxWidth: "100%"
 });
+
+// src/components/Text.tsx
+var Text = styled("p", {
+  fontFamily: "$default",
+  lineHeight: "$base",
+  margin: 0,
+  color: "$gray100",
+  variants: {
+    size: {
+      xxs: { fontSize: "$xxs" },
+      xs: { fontSize: "$xs" },
+      sm: { fontSize: "$sm" },
+      md: { fontSize: "$md" },
+      lg: { fontSize: "$lg" },
+      xl: { fontSize: "$xl" },
+      "2xl": { fontSize: "$1.5rem" },
+      "4xl": { fontSize: "$2rem" },
+      "5xl": { fontSize: "$2.25rem" },
+      "6xl": { fontSize: "$3rem" },
+      "7xl": { fontSize: "$4rem" },
+      "8xl": { fontSize: "$4.5rem" },
+      "9xl": { fontSize: "$6rem" }
+    }
+  },
+  defaultVariants: {
+    size: "md"
+  }
+});
+
+// src/components/Heading.tsx
+var Heading = styled("h2", {
+  fontFamily: "$default",
+  lineHeight: "$shorter",
+  margin: 0,
+  color: "$gray100",
+  variants: {
+    size: {
+      sm: { fontSize: "$xl" },
+      md: { fontSize: "$2xl" },
+      lg: { fontSize: "$4xl" },
+      "2xl": { fontSize: "$5xl" },
+      "3xl": { fontSize: "$6xl" },
+      "4xl": { fontSize: "$7xl" },
+      "5xl": { fontSize: "$8xl" },
+      "6xl": { fontSize: "$9xl" }
+    }
+  },
+  defaultVariants: {
+    size: "md"
+  }
+});
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Box
+  Box,
+  Heading,
+  Text
 });
