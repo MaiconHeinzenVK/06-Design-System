@@ -16,13 +16,13 @@ export const Text = styled('p', {
       md: { fontSize: '$md' },
       lg: { fontSize: '$lg' },
       xl: { fontSize: '$xl' },
-      '2xl': { fontSize: '$1.5rem' },
-      '4xl': { fontSize: '$2rem' },
-      '5xl': { fontSize: '$2.25rem' },
-      '6xl': { fontSize: '$3rem' },
-      '7xl': { fontSize: '$4rem' },
-      '8xl': { fontSize: '$4.5rem' },
-      '9xl': { fontSize: '$6rem' },
+      '2xl': { fontSize: '$2xl' },
+      '4xl': { fontSize: '$4xl' },
+      '5xl': { fontSize: '$5xl' },
+      '6xl': { fontSize: '$6xl' },
+      '7xl': { fontSize: '$7xl' },
+      '8xl': { fontSize: '$8xl' },
+      '9xl': { fontSize: '$9xl' },
     },
   },
 
@@ -34,3 +34,5 @@ export const Text = styled('p', {
 export interface TextProps extends ComponentProps<typeof Text> {
   as?: ElementType
 }
+
+Text.displayName = 'Text'

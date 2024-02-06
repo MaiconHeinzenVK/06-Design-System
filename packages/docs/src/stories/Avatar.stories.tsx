@@ -7,6 +7,13 @@ export default {
     args: {
         src: 'https://github.com/MaiconHeinzenVK.png',
         alt: 'Maicon Heinzen',
+    },
+    argTypes: {
+        src: {
+            control: {
+                type: 'text',
+            }
+        }
     }
 
 } as Meta<AvatarProps>
