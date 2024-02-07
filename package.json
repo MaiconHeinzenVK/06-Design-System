@@ -8,6 +8,12 @@
     "build": "turbo run build"
   },
 
+  "storybook-deployer": {
+    "gitUsername": "Maicon",
+    "gitEmail": "maiconheinzen@gmail.com",
+    "commitMessage": "Deploy Storybook [skip ci]"
+  },
+
   "devDependencies": {
     "turbo": "^1.12.2"
   }
