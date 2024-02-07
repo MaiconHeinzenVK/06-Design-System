@@ -10,7 +10,7 @@ export const Box = styled('div', {
   maxWidth: '100%',
 })
 
-export interface BoxProps extends ComponentProps<typeof BoxProps> {
+export interface BoxProps extends ComponentProps<typeof Box> {
   as?: ElementType
 }
 
