@@ -7,6 +7,7 @@ export const Box = styled('div', {
   background: '$gray800',
   border: '1px solid $gray600',
   width: '100%',
+  height: '100%',
   maxWidth: '100%',
 })
 
