@@ -19,8 +19,12 @@ jobs:
 
       - run: npm ci
 
+      - name: Published to NPM
+        id: changesets
+        uses: changesets/acction@v1
+        with:
+          published: npm run release
       - run: npm run build
-
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static

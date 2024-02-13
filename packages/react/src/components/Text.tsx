@@ -1,4 +1,4 @@
-import { lineHeights } from '@ignite-ui/tokens'
+import { lineHeights } from '@heinzen-ui/tokens'
 import { styled } from '../styles'
 import { ComponentProps, ElementType } from 'react'
 
